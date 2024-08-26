@@ -2,10 +2,12 @@ import { Router } from "express";
 
 import UsersController from "../controllers/users.controller";
 import { adaptRoute } from "../adapter/route-adapter";
+import UsersStorage from "../storage/users.storage";
 
 class UsersRoutes {
   router = Router();
-  controller = new UsersController();
+  userStorage = new UsersStorage();
+  controller = new UsersController(this.userStorage);
 
   constructor() {
     this.intializeRoutes();
