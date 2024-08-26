@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'ts-node src/index.ts'",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "license": "MIT",
   "devDependencies": {

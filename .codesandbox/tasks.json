@@ -21,7 +21,7 @@
     "test": {
       "name": "test",
       "command": "yarn test:watch",
-      "runAtStart": true
+      "runAtStart": false
     }
   }
 }
